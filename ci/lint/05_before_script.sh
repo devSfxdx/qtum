@@ -6,5 +6,4 @@
 
 export LC_ALL=C
 
-git submodule update --remote
 git fetch --unshallow
