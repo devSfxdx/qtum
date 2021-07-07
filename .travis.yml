@@ -75,11 +75,11 @@ jobs:
       language: python
       python: '3.5' # Oldest supported version according to doc/dependencies.md
       install:
-        - set -ex; source ./ci/lint/04_install.sh
+        - set -o errexit; source ./ci/lint/04_install.sh
       before_script:       
-        - set -ex; source ./ci/lint/05_before_script.sh
+        - set -o errexit; source ./ci/lint/05_before_script.sh
       script:
-        - set -ex; source ./ci/lint/06_script.sh
+        - set -o errexit; source ./ci/lint/06_script.sh
 
     - stage: test
       name: 'ARM  [GOAL: install]  [buster]  [unit tests, functional tests]'

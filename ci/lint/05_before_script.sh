@@ -6,5 +6,4 @@
 
 export LC_ALL=C
 
-git submodule update --force --init --recursive
 git fetch --unshallow
